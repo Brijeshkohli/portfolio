@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+</head>
+<body>
+<h1>fetch data</h1>
+
+<table id ="table">
+
+</table>
+
+<button onclick="myFunction()">Click me</button>
+
+
+<script>
+function myFunction(){
+fetch("data_json.json")
+      .then(response => response.json())
+      .then(json => show(json))
+    //   js_data = JSON.parse(json);
+    // show(js_data)   
+}
+
+function show(employee) {
+    console.log("In show function!")
+let table = document.getElementById("table");
+    console.log(employee.length);
+for (let i =0; i <employee.length; i++){
+
+    let obj = employee[i];
+    console.log(obj);
+    let row = document.createElement("tr");
+    let username = document.createElement("td");
+    let firstname = document.createElement("td");
+    let lastname= document.createElement("td");
+    let gender= document.createElement("td");
+    let email= document.createElement("td");
+
+    username.innerHTML = obj.username
+    firstname.innerHTML= obj.firstName
+    lastname.innerHTML=obj.lastName
+    gender.innerHTML=obj.gender
+    email.innerHTML=obj.email
+
+    row.appendChild(username)
+    row.appendChild(firstname)
+    row.appendChild(lastname)
+    row.appendChild(gender)
+    row.appendChild(email)
+//    document.write(tb);
+    let tb = document.getElementById("table")
+    tb.appendChild(row); 
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   {
+    //     // console.log(data);
+
+    //     // for (let i =0 ; i <data.length; i++){
+
+    //     //     let obj = data[i];
+    //     //     document.getElementById("table").innerHTML;
+    //     //     document.write (obj.id);
+    //     // }
+    
+        
+    //   }
+     
+    //)
+
+
+
+
+
+
+
+
+
+
+
+
+//   document.getElementById("demo").innerHTML;
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

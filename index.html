@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrjshPortfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+ 
+  <body>
+
+    <div id="Wrapper">
+      <div class="container">
+        <div class="navbar">
+
+          <div class="logo-container">
+            <img src="./images.jpg" alt="logo" class="logo" />
+            <div class="logo-text">rijesh Mahawar</div>
+          </div>
+
+          <div class="nav-items">
+          
+            <div><a href="#projects"> Projects </a></div>
+            <div><a href="#skills"> Skills </a></div>
+            <div><a href="#contactme"> Contact Me </a></div>
+
+         </div>
+
+        </div>
+        <div class="hero-section"> 
+
+        <div class="faded-text"> Brijesh Mahawar </div>
+
+        <div class="hero-section-left"> 
+          <div class="hero-section-heading"> Hi!! Brijesh Mahawar </div>
+          <div class="hero-subsection-sub-heading hero-section-heading"> I am a  <span class="role"></span>
+          </div>
+ 
+          <div class="hero-section-discription">
+            I'm a software developer and here is my
+            portfolio website. Here you'll learn about
+            my journey as a software developer.
+          </div>
+          <div 
+          class="btn-pink" id = "btn">Hire Me
+          </div>
+
+        </div>
+
+        <div class="hero-section-right">
+
+          <div class="absolute icon-dot">
+            <img src="./dot-icon.png" alt="" height="40px" width="60px">
+          </div>
+          <div class="absolute icon-cube">
+            <img src="./icon-cube.png" alt=""  height="30px" width="30px">
+          </div>
+          <div class="absolute icon-circle">
+            <img src="./circle.png" alt="" height="30px" width="30px">
+          </div>
+          <div class="absolute icon-zigzag">
+            <img src="./zigzag.png" alt="" height="30px" width="30px">
+          </div>
+          <div class="absolute icon-plus">
+            <img src="./plus.png" alt="" height="30px" width="30px" >
+          </div>
+
+          <div class="user-image">
+            <img src="./user-image.jpg" alt=""  height="300px" width="300px" >
+          </div>
+
+
+        </div>
+
+      </div>
+      </div>
+      
+   </div>
+
+  <!-- Element to contain animated typing -->
+  <span id="element"></span>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed(".role", {
+      strings: ["Full Stack Developer",
+"Web Developer",
+"UI-UX Designer",
+"Backend Developer",
+"Coder",],
+      loop:true,
+      typeSpeed: 50,
+      backspeed: 80,
+      backdelay:1000,
+    });
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
